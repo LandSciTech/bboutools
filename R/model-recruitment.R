@@ -149,6 +149,10 @@ model_recruitment <-
       buildDerivs = TRUE,
       name = "bboumodel_recruitment"
     )
+    
+    # prevents functions being added to globalenv by nimble fixRStudioHanging method 
+    # see nimble issue https://github.com/nimble-dev/nimble/issues/1604
+    rm(list = ls(pattern = "^str\\.", envir = globalenv()), envir = globalenv())
 
     # reset to user
     nimbleOptions(verbose = verbose)

@@ -132,6 +132,10 @@ model_survival <- function(data,
     buildDerivs = build_derivs,
     name = "bboumodel_survival"
   )
+  
+  # prevents functions being added to globalenv by nimble fixRStudioHanging method 
+  # see nimble issue https://github.com/nimble-dev/nimble/issues/1604
+  rm(list = ls(pattern = "^str\\.", envir = globalenv()), envir = globalenv())
 
   # reset to user
   nimbleOptions(verbose = verbose)
