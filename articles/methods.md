@@ -92,7 +92,7 @@ Maximum Likelihood or a fully Bayesian approach. Random effects are used
 where appropriate by default. The Bayesian approach also uses
 biologically reasonable, weakly informative priors by default (see the
 [priors
-article](https://poissonconsulting.github.io/bboutools/articles/priors.html)
+article](https://LandSciTech.github.io/bboutools/articles/priors.html)
 for details). `bboutools` provides relatively simple general models that
 can be used to compare survival, recruitment and population growth
 estimates across jurisdictions.
@@ -243,7 +243,7 @@ Following Hatter and Bergerud (1991), it can be shown that
 
 When survival and recruitment fits contain different populations or year
 ranges,
-[`bb_predict_growth()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_growth.md)
+[`bb_predict_growth()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_growth.md)
 auto-filters to the intersection of shared population and year
 combinations. An informative message reports what was excluded.
 

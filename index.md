@@ -10,9 +10,10 @@ jurisdictions.
 
 To install the latest development version:
 
-``` R
+``` r
+
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/bboutools")
+remotes::install_github("LandSciTech/bboutools")
 ```
 
 ## Introduction
@@ -21,10 +22,12 @@ remotes::install_github("poissonconsulting/bboutools")
 
 `bboutools` accepts survival data in a specific format.
 
-``` R
+``` r
+
 library(tibble) # for printing data frames
-#> Warning: package 'tibble' was built under R version 4.5.3
+#> Warning: package 'tibble' was built under R version 4.4.3
 library(ggplot2) # for plotting
+#> Warning: package 'ggplot2' was built under R version 4.4.3
 
 library(bboudata) # for boreal caribou datasets
 #> 
@@ -49,10 +52,11 @@ head(surv_data)
 
 The survival model, which includes a random effect of month, is fitted
 using
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md).
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md).
 To achieve convergence increase `nthin`.
 
-``` R
+``` r
+
 set.seed(99)
 surv_fit <- bb_fit_survival(surv_data, quiet = TRUE)
 glance(surv_fit)
@@ -63,9 +67,10 @@ glance(surv_fit)
 ```
 
 Predictions can then be generated using
-[`bb_predict_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_survival.md).
+[`bb_predict_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_survival.md).
 
-``` R
+``` r
+
 surv_pred <- bb_predict_survival(surv_fit)
 surv_pred
 #> # A tibble: 32 × 6
@@ -85,9 +90,10 @@ surv_pred
 ```
 
 And plotted using
-[`bb_plot_year()`](https://poissonconsulting.github.io/bboutools/reference/bb_plot_year.md)
+[`bb_plot_year()`](https://github.com/LandSciTech/bboutools/reference/bb_plot_year.md)
 
-``` R
+``` r
+
 bb_plot_year_survival(surv_pred) +
   expand_limits(y = c(0, 1))
 ```
@@ -95,9 +101,10 @@ bb_plot_year_survival(surv_pred) +
 ![](reference/figures/README-unnamed-chunk-5-1.png)
 
 The survival in each month can be plotted using
-[`bb_plot_month()`](https://poissonconsulting.github.io/bboutools/reference/bb_plot_month.md)
+[`bb_plot_month()`](https://github.com/LandSciTech/bboutools/reference/bb_plot_month.md)
 
-``` R
+``` r
+
 bb_plot_month_survival(surv_fit)
 ```
 
@@ -110,7 +117,8 @@ the whole year.
 
 The equivalent functions for recruitment data are
 
-``` R
+``` r
+
 recruit_data <- bboudata::bbourecruit_a
 head(recruit_data)
 #> # A tibble: 6 × 9
@@ -134,11 +142,12 @@ bb_plot_year_recruitment(recruit_fit)
 ### Population Growth
 
 The function
-[`bb_predict_growth()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_growth.md)
+[`bb_predict_growth()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_growth.md)
 predicts the annual population growth (lambda) rate from the survival
 and recruitment models.
 
-``` R
+``` r
+
 lambda <- bb_predict_growth(surv_fit, recruit_fit)
 #> Filtering to shared population and year combinations. CaribouYears in survival only: 1985, 1986, 1987, 1988, 2016.
 bb_plot_year_growth(lambda)
@@ -146,11 +155,12 @@ bb_plot_year_growth(lambda)
 
 ![](reference/figures/README-unnamed-chunk-8-1.png)
 
-[`bb_predict_population_change()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_population_change.md)
+[`bb_predict_population_change()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_population_change.md)
 calculates the population change (%) with uncertainty as the cumulative
 product of population growth.
 
-``` R
+``` r
+
 change <- bb_predict_population_change(surv_fit, recruit_fit)
 #> Filtering to shared population and year combinations. CaribouYears in survival only: 1985, 1986, 1987, 1988, 2016.
 bb_plot_year_population_change(change)
@@ -161,21 +171,21 @@ bb_plot_year_population_change(change)
 ## Information
 
 Additional information is available from the [bboutools
-website](https://poissonconsulting.github.io/bboutools/), which includes
-the following articles:  
+website](https://github.com/LandSciTech/bboutools/), which includes the
+following articles:  
 - [Get
-Started](https://poissonconsulting.github.io/bboutools/articles/bboutools.html).  
+Started](https://github.com/LandSciTech/bboutools/articles/bboutools.html).  
 - [Analytic Methods for Estimation of Boreal Caribou Survival,
 Recruitment and Population
-Growth](https://poissonconsulting.github.io/bboutools/articles/bbmethods.html).  
+Growth](https://github.com/LandSciTech/bboutools/articles/bbmethods.html).  
 - [Prior Selection and
-Influence](https://poissonconsulting.github.io/bboutools/articles/priors.html). -
+Influence](https://github.com/LandSciTech/bboutools/articles/priors.html). -
 [Multi-Population Analysis and Other
-Extensions](https://poissonconsulting.github.io/bboutools/articles/extensions.html).
+Extensions](https://github.com/LandSciTech/bboutools/articles/extensions.html).
 
 There is also a [user-friendly graphical
 interface](https://poissonconsulting.shinyapps.io/bboushiny/), called
-[`bboushiny`](https://github.com/poissonconsulting/bboushiny), for non-R
+[`bboushiny`](https://github.com/LandSciTech/bboushiny), for non-R
 users.
 
 ## bbou Suite
@@ -183,31 +193,33 @@ users.
 `bboutools` is part of the bbou suite of tools. Other packages in this
 suite include:
 
-- [bboudata](https://github.com/poissonconsulting/bboudata)
-- [bbouretro](https://github.com/poissonconsulting/bbouretro)
-- [bboushiny](https://github.com/poissonconsulting/bboushiny)
-- [bbousims](https://github.com/poissonconsulting/bbousims)
+- [bboudata](https://github.com/LandSciTech/bboudata)
+- [bbouretro](https://github.com/LandSciTech/bbouretro)
+- [bboushiny](https://github.com/LandSciTech/bboushiny)
+- [bbousims](https://github.com/LandSciTech/bbousims)
 
 ## Contribution
 
 Please report any
-[issues](https://github.com/poissonconsulting/bboutools/issues).
+[issues](https://github.com/LandSciTech/bboutools/issues).
 
-[Pull requests](https://github.com/poissonconsulting/bboutools/pulls)
-are always welcome.
+[Pull requests](https://github.com/LandSciTech/bboutools/pulls) are
+always welcome.
 
 ## Code of Conduct
 
 Please note that the `bboutools` project is released with a [Contributor
 Code of
-Conduct](https://poissonconsulting.github.io/bboutools/CODE_OF_CONDUCT.html).
+Conduct](https://github.com/LandSciTech/bboutools/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
 
 ## Licensing
 
 Copyright 2022-2023 Integrated Ecological Research and Poisson
 Consulting Ltd.  
-Copyright 2024 Province of Alberta
+Copyright 2024 Province of Alberta  
+Copyright (c) His Majesty the King in Right of Canada as represented by
+the Minister of the Environment 2025
 
 The documentation is released under the [CC BY 4.0
 License](https://creativecommons.org/licenses/by/4.0/)

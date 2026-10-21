@@ -13,4 +13,4 @@ bb_plot_year_population_change(x)
 - x:
 
   A data frame of the population change estimates (output of
-  [`bb_predict_population_change()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_population_change.md)).
+  [`bb_predict_population_change()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_population_change.md)).

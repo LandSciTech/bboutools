@@ -18,7 +18,7 @@ Several anonymized data sets are provided in a separate R package,
 `bboudata`.
 
 In order to use `bboutools` you need to install R (see below) or use the
-Shiny [app](https://github.com/poissonconsulting/bboushiny).
+Shiny [app](https://github.com/LandSciTech/bboushiny).
 
 ## Philosophy
 
@@ -40,7 +40,7 @@ GitHub by executing the following code at the R console
 ``` r
 
 install.packages("remotes")
-remotes::install_github("poissonconsulting/bboutools")
+remotes::install_github("LandSciTech/bboutools")
 ```
 
 The `bboutools` package can then be loaded into the current session
@@ -55,7 +55,7 @@ library(bboutools)
 
 To get additional information on a particular function just type `?`
 followed by the name of the function at the R console. For example
-[`?bb_fit_recruitment`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md)
+[`?bb_fit_recruitment`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md)
 brings up the R documentation for the `bboutools` recruitment model fit
 function.
 
@@ -65,7 +65,7 @@ Science](https://r4ds.had.co.nz) (Wickham and Grolemund 2016).
 If you discover a bug in `bboutools` please file an issue with a
 [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html)
 (reproducible example) at
-<https://github.com/poissonconsulting/bboutools/issues>.
+<https://github.com/LandSciTech/bboutools/issues>.
 
 ## Providing Data
 
@@ -125,7 +125,7 @@ Both survival and recruitment data can include multiple populations
 as one row per population per year (aggregate annual data). Placeholder
 rows with `NA` measurement columns can be added for unobserved years
 with `allow_missing = TRUE`. See the [extensions
-article](https://poissonconsulting.github.io/bboutools/articles/extensions.html)
+article](https://LandSciTech.github.io/bboutools/articles/extensions.html)
 for details.
 
 The `.csv` file can then be read into R using the following
@@ -150,7 +150,7 @@ similar to adult survival.
 ### Fit a Bayesian model
 
 The function
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md)
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md)
 fits a Bayesian recruitment model.
 
 The start month of the biological year (i.e., ‘caribou year’) can be set
@@ -235,7 +235,7 @@ interrogate the output of model fitting functions.
   provides a list of the coefficient estimates.
 - [`augment()`](https://generics.r-lib.org/reference/augment.html)
   provides the data used.
-- [`model_code()`](https://poissonconsulting.github.io/bboutools/reference/model_code.md)
+- [`model_code()`](https://github.com/LandSciTech/bboutools/reference/model_code.md)
   provides the model code in BUGS-like syntax.
 - [`plot()`](https://rdrr.io/r/graphics/plot.default.html) provides
   traceplots for individual parameters.
@@ -263,11 +263,11 @@ the fitting functions.
 In general, weakly informative priors are used by default (Gelman et al.
 2017; McElreath 2016). The default prior distribution parameter values
 can be accessed from
-[`bb_priors_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment.md)
+[`bb_priors_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment.md)
 and
-[`bb_priors_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_survival.md).
+[`bb_priors_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_survival.md).
 See the [priors
-article](https://poissonconsulting.github.io/bboutools/articles/priors.html)
+article](https://LandSciTech.github.io/bboutools/articles/priors.html)
 for more information.
 
 ``` r
@@ -288,7 +288,7 @@ The default prior distribution for adult_female_proportion is
 (`b0`) is `Normal(-1.5, 1)`, which is on the log scale. The user can
 change the priors by providing a named vector to the `priors` argument
 in the model fitting functions. The names must match one of the names in
-[`bb_priors_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment.md).
+[`bb_priors_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment.md).
 
 For example, less informative priors for `adult_female_proportion`
 (e.g., `Beta(1, 1)`) and `b0` (e.g., `Normal(0, 5)`) can be supplied as
@@ -301,9 +301,9 @@ recruitment <- bb_fit_recruitment(bboudata::bbourecruit_a, priors = c(adult_fema
 
 The user can also specify priors informed by national
 demographic-disturbance relationships (Johnson et al. 2020) using
-[`bb_priors_survival_national()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_survival_national.md)
+[`bb_priors_survival_national()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_survival_national.md)
 and
-[`bb_priors_recruitment_national()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment_national.md).
+[`bb_priors_recruitment_national()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment_national.md).
 These functions return intercept priors based on the level of
 anthropogenic and fire disturbance.
 
@@ -314,14 +314,14 @@ recruitment_nat <- bb_fit_recruitment(bboudata::bbourecruit_a, priors = nat_prio
 ```
 
 See the [priors
-article](https://poissonconsulting.github.io/bboutools/articles/priors.html)
+article](https://LandSciTech.github.io/bboutools/articles/priors.html)
 for more information.
 
 If the user is interested in fitting models without any prior
 information, see
-[`bb_fit_recruitment_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment_ml.md)
+[`bb_fit_recruitment_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment_ml.md)
 and
-[`bb_fit_survival_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival_ml.md),
+[`bb_fit_survival_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival_ml.md),
 which use a Maximum Likelihood approach (see [Maximum
 Likelihood](#maximum-likelihood) below).
 
@@ -334,13 +334,13 @@ mortalities. The user can choose whether to include individuals with
 uncertain fates with the certain mortalities.
 
 The function
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md)
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md)
 fits a Bayesian survival model.
 
 The survival model is always fit with a random intercept for each month.
 Otherwise, the `year_start`, `year_trend`, and `min_random_year`
 arguments have the same behaviour as
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md)
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md)
 above.
 
 If `include_uncertain_mortalities = TRUE`, the total mortalities is the
@@ -372,14 +372,14 @@ population growth.
 
 Recruitment is the adjusted recruitment using methods from (DeCesare et
 al. 2012). See the [analytical methods
-article](https://poissonconsulting.github.io/bboutools/articles/methods.html)
+article](https://LandSciTech.github.io/bboutools/articles/methods.html)
 for details.
 
 Predictions of calf-cow ratio can also be made using
-[`bb_predict_calf_cow_ratio()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_calf_cow_ratio.md).
+[`bb_predict_calf_cow_ratio()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_calf_cow_ratio.md).
 
 The sex ratio is set at fit time via the `sex_ratio` argument in
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md)
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md)
 and is automatically extracted by predict functions.
 
 #### Recruitment by year
@@ -440,17 +440,17 @@ bb_plot_month_survival(predict_survival_month)
 ## Population Growth
 
 A user can predict population growth (lambda) with
-[`bb_predict_growth()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_growth.md).
+[`bb_predict_growth()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_growth.md).
 The survival and recruitment models fit in the previous steps are used
 as input. It is important to ensure that survival and recruitment
 outputs share the same biological year (i.e., ‘caribou year’), which is
 set with the `year_start` argument in
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md)
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md)
 and
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md).
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md).
 Details on how lambda is calculated can be found in the [analytical
 methods
-article](https://poissonconsulting.github.io/bboutools/articles/methods.html).
+article](https://LandSciTech.github.io/bboutools/articles/methods.html).
 
 ``` r
 
@@ -481,7 +481,7 @@ bb_plot_year_population_change(predict_change)
 
 `bboutools` can fit models to data from multiple populations
 simultaneously. The function
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md)
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md)
 auto-detects multiple populations from the `PopulationName` column.
 
 ``` r
@@ -503,16 +503,16 @@ The default faceting can be overridden since all plot functions return
 `ggplot2` objects.
 
 See the [extensions
-article](https://poissonconsulting.github.io/bboutools/articles/extensions.html)
+article](https://LandSciTech.github.io/bboutools/articles/extensions.html)
 for more information on multi-population analysis, aggregate annual
 survival data, predicting unobserved years and other extensions.
 
 ## Maximum Likelihood
 
 Maximum Likelihood (ML) models can be fit using the
-[`bb_fit_recruitment_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment_ml.md)
+[`bb_fit_recruitment_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment_ml.md)
 and
-[`bb_fit_survival_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival_ml.md)
+[`bb_fit_survival_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival_ml.md)
 functions. These functions take a few seconds to execute because Nimble
 must compile the model into C++ code. See the [Nimble
 documentation](https://r-nimble.org/html_manual/cha-AD.html#how-to-use-laplace-approximation)
@@ -633,9 +633,9 @@ inits_ml <- bb_fit_recruitment_ml(bboudata::bbourecruit_a, inits = c(b0 = 1, sAn
 ## Understanding `bboufit` objects
 
 The
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md)
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md)
 and
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md)
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md)
 functions use a Bayesian approach and return objects that inherit from
 class `bboufit`.
 
@@ -652,17 +652,17 @@ Objects of class `bboufit` have four elements:
 These are the raw materials for any further exploration or analysis. For
 example, view trace and density plots with `plot(fit$samples)`.
 
-See [mcmcr](https://github.com/poissonconsulting/mcmcr) and
-[mcmcderive](https://github.com/poissonconsulting/mcmcderive) for
-working with `mcmcr` objects, or convert samples to an object of class
-`mcmc.list`, e,g, with
+See [mcmcr](https://github.com/LandSciTech/mcmcr) and
+[mcmcderive](https://github.com/LandSciTech/mcmcderive) for working with
+`mcmcr` objects, or convert samples to an object of class `mcmc.list`,
+e,g, with
 [`coda::as.mcmc.list`](https://rdrr.io/pkg/coda/man/mcmc.list.html) for
 working with the [coda](https://github.com/cran/coda) R package.
 
 The
-[`bb_fit_survival_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival_ml.md)
+[`bb_fit_survival_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival_ml.md)
 and
-[`bb_fit_recruitment_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment_ml.md)
+[`bb_fit_recruitment_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment_ml.md)
 functions use a Maximum Likelihood approach and return objects that
 inherit from class `bboufit_ml`.
 

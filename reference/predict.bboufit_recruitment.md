@@ -1,7 +1,7 @@
 # Predict Recruitment
 
 A wrapper on
-[`bb_predict_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_recruitment.md).
+[`bb_predict_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_recruitment.md).
 
 ## Usage
 
@@ -51,4 +51,4 @@ predict(
 
 ## See also
 
-[`bb_predict_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_recruitment.md)
+[`bb_predict_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_recruitment.md)

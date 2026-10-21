@@ -42,7 +42,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/poissonconsulting/bboutools/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="nav-link" href="https://github.com/LandSciTech/bboutools/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -59,7 +59,7 @@
       <h1>Prior Selection and Influence</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/bboutools/blob/main/vignettes/articles/priors.Rmd" class="external-link"><code>vignettes/articles/priors.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/LandSciTech/bboutools/blob/main/vignettes/articles/priors.Rmd"><code>vignettes/articles/priors.Rmd</code></a></small>
       <div class="d-none name"><code>priors.Rmd</code></div>
     </div>
 
@@ -163,7 +163,7 @@ comparing the sensitivity of results to different prior assumptions. The
 examples below illustrate how tightening or relaxing priors affects
 parameter estimates relative to the Maximum Likelihood baseline.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/poissonconsulting/bboutools" class="external-link">bboutools</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/LandSciTech/bboutools">bboutools</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level4">
@@ -177,7 +177,7 @@ proportions, along with the default and maximum likelihood
 estimates.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span> <span class="op">|&gt;</span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">Year</span> <span class="op">&gt;=</span> <span class="fl">2005</span>, <span class="va">Year</span> <span class="op">&lt;=</span> <span class="fl">2010</span><span class="op">)</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span></span>
 <span>    UnknownAdults <span class="op">=</span> <span class="va">UnknownAdults</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">Cows</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">Bulls</span> <span class="op">/</span> <span class="fl">2</span><span class="op">)</span>,</span>
@@ -242,7 +242,7 @@ survival corresponds to a monthly survival of approximately <span class="math in
 allowing the data to shift the estimate.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_c.html" class="external-link">bbousurv_c</a></span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_c.html" class="external-link">bbousurv_c</a></span></span>
 <span></span>
 <span><span class="co"># default prior: b0 ~ Normal(3, 10)</span></span>
 <span><span class="va">fit_default</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival.html">bb_fit_survival</a></span><span class="op">(</span><span class="va">data</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
@@ -304,7 +304,7 @@ option returns priors on the annual survival scale.</p>
 and national disturbance-informed priors.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
-<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_c.html" class="external-link">bbousurv_c</a></span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_c.html" class="external-link">bbousurv_c</a></span></span>
 <span></span>
 <span><span class="va">fit_default</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival.html">bb_fit_survival</a></span><span class="op">(</span><span class="va">data</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>
@@ -376,7 +376,7 @@ Group.
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by <a href="https://www.poissonconsulting.ca/author/seb-dalgarno/" class="external-link">Seb Dalgarno</a>, <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, John Boulanger, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>.</p>
+  <p>Developed by <a href="https://www.poissonconsulting.ca/author/seb-dalgarno/" class="external-link">Seb Dalgarno</a>, <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, John Boulanger, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>, Sarah Endicott.</p>
 </div>
 
 <div class="pkgdown-footer-right">

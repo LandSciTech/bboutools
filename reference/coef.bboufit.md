@@ -1,7 +1,7 @@
 # Get Tidy Tibble from bboufit Object.
 
 A wrapper on
-[`tidy.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/tidy.bboufit.md).
+[`tidy.bboufit()`](https://github.com/LandSciTech/bboutools/reference/tidy.bboufit.md).
 
 ## Usage
 
@@ -22,7 +22,7 @@ coef(object, ...)
 
 ## See also
 
-[`tidy.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/tidy.bboufit.md)
+[`tidy.bboufit()`](https://github.com/LandSciTech/bboutools/reference/tidy.bboufit.md)
 
 ## Examples
 

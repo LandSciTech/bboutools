@@ -18,9 +18,9 @@ to let the data drive the estimates (Gelman et al. 2017; McElreath
 2016).
 
 If the user is interested in fitting models without priors, see
-[`bb_fit_recruitment_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment_ml.md)
+[`bb_fit_recruitment_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment_ml.md)
 and
-[`bb_fit_survival_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival_ml.md),
+[`bb_fit_survival_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival_ml.md),
 which have identical models but use a frequentist approach (Maximum
 Likelihood) to parameter estimation. Models fit with Maximum Likelihood
 are equivalent to Bayesian models with completely uninformative priors
@@ -153,7 +153,7 @@ data. When most adults are already classified as Cows or Bulls, the
 prior has little practical effect on recruitment.
 
 The adult\\female\\proportion can also simply be fixed. See
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md)
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md)
 for details.
 
 #### Survival intercept
@@ -211,16 +211,16 @@ levels to expected survival and recruitment, based on the national
 boreal caribou model.
 
 The functions
-[`bb_priors_survival_national()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_survival_national.md)
+[`bb_priors_survival_national()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_survival_national.md)
 and
-[`bb_priors_recruitment_national()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment_national.md)
+[`bb_priors_recruitment_national()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment_national.md)
 return intercept priors (`b0_mu` and `b0_sd`) based on the percent
 anthropogenic disturbance (`anthro`) and percent fire disturbance not
 overlapping with anthropogenic disturbance (`fire_excl_anthro`). All
 other prior parameters retain their defaults from
-[`bb_priors_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_survival.md)
+[`bb_priors_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_survival.md)
 and
-[`bb_priors_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment.md).
+[`bb_priors_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment.md).
 
 ``` r
 

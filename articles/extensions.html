@@ -42,7 +42,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/poissonconsulting/bboutools/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="nav-link" href="https://github.com/LandSciTech/bboutools/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -59,7 +59,7 @@
       <h1>Multi-Population Analysis and Other Extensions</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/bboutools/blob/main/vignettes/articles/extensions.Rmd" class="external-link"><code>vignettes/articles/extensions.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/LandSciTech/bboutools/blob/main/vignettes/articles/extensions.Rmd"><code>vignettes/articles/extensions.Rmd</code></a></small>
       <div class="d-none name"><code>extensions.Rmd</code></div>
     </div>
 
@@ -78,7 +78,7 @@
 <!-- # See the License for the specific language governing permissions and -->
 <!-- # limitations under the License. -->
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/poissonconsulting/bboutools" class="external-link">bboutools</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/LandSciTech/bboutools">bboutools</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></code></pre></div>
 <p><code>bboutools</code> supports several extensions to the standard
@@ -98,7 +98,7 @@ populations from the <code>PopulationName</code> column.</p>
 <p>Multi-population data has the same columns as single-population data,
 with different values in <code>PopulationName</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surv_multi</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_multi.html" class="external-link">bbousurv_multi</a></span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_multi.html" class="external-link">bbousurv_multi</a></span><span class="op">$</span><span class="va">Month</span><span class="op">)</span>, <span class="op">]</span></span>
+<code class="sourceCode R"><span><span class="va">surv_multi</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_multi.html" class="external-link">bbousurv_multi</a></span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_multi.html" class="external-link">bbousurv_multi</a></span><span class="op">$</span><span class="va">Month</span><span class="op">)</span>, <span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">surv_multi</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 6</span></span></span>
 <span><span class="co">#&gt;   PopulationName  Year Month StartTotal MortalitiesCertain MortalitiesUncertain</span></span>
@@ -166,8 +166,8 @@ return <code>ggplot2</code> objects.</p>
 <p>The recruitment model supports the same multi-population
 structure.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">rec_multi</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_multi.html" class="external-link">bbourecruit_multi</a></span><span class="op">[</span></span>
-<span>  <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_multi.html" class="external-link">bbourecruit_multi</a></span><span class="op">$</span><span class="va">Month</span><span class="op">)</span>,</span>
+<code class="sourceCode R"><span><span class="va">rec_multi</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_multi.html" class="external-link">bbourecruit_multi</a></span><span class="op">[</span></span>
+<span>  <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_multi.html" class="external-link">bbourecruit_multi</a></span><span class="op">$</span><span class="va">Month</span><span class="op">)</span>,</span>
 <span><span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">101</span><span class="op">)</span></span>
 <span><span class="va">recruitment_multi</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="va">rec_multi</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
@@ -175,7 +175,7 @@ structure.</p>
 <code class="sourceCode R"><span><span class="va">pred_rec_multi</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_predict_recruitment.html">bb_predict_recruitment</a></span><span class="op">(</span><span class="va">recruitment_multi</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/bb_plot_year_recruitment.html">bb_plot_year_recruitment</a></span><span class="op">(</span><span class="va">pred_rec_multi</span><span class="op">)</span></span></code></pre></div>
 <p><img src="extensions_files/figure-html/unnamed-chunk-11-1.png" class="r-plt" alt="" width="768"></p>
-<p>See the <a href="https://poissonconsulting.github.io/bboutools/articles/methods.html">analytical
+<p>See the <a href="https://LandSciTech.github.io/bboutools/articles/methods.html" class="external-link">analytical
 methods article</a> for details on the multi-population model
 specification.</p>
 <p>Multi-population Maximum Likelihood models are not currently
@@ -195,7 +195,7 @@ not available and only annual summaries exist.</p>
 <code>Month</code> to the <code>year_start</code> value (default
 <code>4L</code> for April).</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surv_annual</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_annual.html" class="external-link">bbousurv_annual</a></span></span>
+<code class="sourceCode R"><span><span class="va">surv_annual</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_annual.html" class="external-link">bbousurv_annual</a></span></span>
 <span><span class="va">surv_annual_c</span> <span class="op">&lt;-</span> <span class="va">surv_annual</span><span class="op">[</span><span class="va">surv_annual</span><span class="op">$</span><span class="va">PopulationName</span> <span class="op">==</span> <span class="st">"C"</span>, <span class="op">]</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">surv_annual_c</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 6</span></span></span>
@@ -259,7 +259,7 @@ done by adding placeholder rows to the input data and setting
 <code>Year</code> filled in, with all measurement columns set to
 <code>NA_integer_</code>.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">surv_missing</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_missing.html" class="external-link">bbousurv_missing</a></span></span>
+<code class="sourceCode R"><span><span class="va">surv_missing</span> <span class="op">&lt;-</span> <span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_missing.html" class="external-link">bbousurv_missing</a></span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">surv_missing</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 6</span></span></span>
 <span><span class="co">#&gt;   PopulationName  Year Month StartTotal MortalitiesCertain MortalitiesUncertain</span></span>
@@ -357,7 +357,7 @@ when using disturbance-informed national priors.</p>
 exchangeable and marginal predictions are identical across years. The
 <code>year_trend = TRUE</code> option allows temporal patterns from the
 <code>bYear</code> prior to appear in predictions.</p>
-<p>Prior-only sampling is only supported for Bayesian models. See the <a href="https://poissonconsulting.github.io/bboutools/articles/priors.html">priors
+<p>Prior-only sampling is only supported for Bayesian models. See the <a href="https://LandSciTech.github.io/bboutools/articles/priors.html" class="external-link">priors
 article</a> for more information on national priors and data
 rescaling.</p>
 </div>
@@ -971,7 +971,7 @@ available for models fit with <code>year_trend = TRUE</code>.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by <a href="https://www.poissonconsulting.ca/author/seb-dalgarno/" class="external-link">Seb Dalgarno</a>, <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, John Boulanger, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>.</p>
+  <p>Developed by <a href="https://www.poissonconsulting.ca/author/seb-dalgarno/" class="external-link">Seb Dalgarno</a>, <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, John Boulanger, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>, Sarah Endicott.</p>
 </div>
 
 <div class="pkgdown-footer-right">

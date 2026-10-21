@@ -13,4 +13,4 @@ bb_plot_year_growth(x)
 - x:
 
   A data frame of the lambda estimates (output of
-  [`bb_predict_growth()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_growth.md)).
+  [`bb_predict_growth()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_growth.md)).

@@ -39,14 +39,14 @@ A tibble of the tidy coefficient summary.
 
 ## See also
 
-[`coef.bboufit_ml()`](https://poissonconsulting.github.io/bboutools/reference/coef.bboufit_ml.md)
+[`coef.bboufit_ml()`](https://github.com/LandSciTech/bboutools/reference/coef.bboufit_ml.md)
 
 Other generics:
-[`augment.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/augment.bboufit.md),
-[`augment.bboufit_ml()`](https://poissonconsulting.github.io/bboutools/reference/augment.bboufit_ml.md),
-[`glance.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/glance.bboufit.md),
-[`glance.bboufit_ml()`](https://poissonconsulting.github.io/bboutools/reference/glance.bboufit_ml.md),
-[`tidy.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/tidy.bboufit.md)
+[`augment.bboufit()`](https://github.com/LandSciTech/bboutools/reference/augment.bboufit.md),
+[`augment.bboufit_ml()`](https://github.com/LandSciTech/bboutools/reference/augment.bboufit_ml.md),
+[`glance.bboufit()`](https://github.com/LandSciTech/bboutools/reference/glance.bboufit.md),
+[`glance.bboufit_ml()`](https://github.com/LandSciTech/bboutools/reference/glance.bboufit_ml.md),
+[`tidy.bboufit()`](https://github.com/LandSciTech/bboutools/reference/tidy.bboufit.md)
 
 ## Examples
 

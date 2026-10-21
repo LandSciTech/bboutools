@@ -57,7 +57,7 @@ surv_multi |>
 ### Fitting
 
 No special argument is needed. The function
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md)
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md)
 detects multiple populations and fits a single model with
 population-indexed parameters.
 
@@ -130,7 +130,7 @@ bb_plot_year_recruitment(pred_rec_multi)
 ![](extensions_files/figure-html/unnamed-chunk-11-1.png)
 
 See the [analytical methods
-article](https://poissonconsulting.github.io/bboutools/articles/methods.html)
+article](https://LandSciTech.github.io/bboutools/articles/methods.html)
 for details on the multi-population model specification.
 
 Multi-population Maximum Likelihood models are not currently supported.
@@ -180,7 +180,7 @@ monthly to annual survival is skipped.
 ### Predictions
 
 The function
-[`bb_predict_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_survival.md)
+[`bb_predict_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_survival.md)
 works as normal for annual fits.
 
 ``` r
@@ -329,15 +329,15 @@ predictions.
 
 Prior-only sampling is only supported for Bayesian models. See the
 [priors
-article](https://poissonconsulting.github.io/bboutools/articles/priors.html)
+article](https://LandSciTech.github.io/bboutools/articles/priors.html)
 for more information on national priors and data rescaling.
 
 ## Growth Predictions with Mismatched Fits
 
 The functions
-[`bb_predict_growth()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_growth.md)
+[`bb_predict_growth()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_growth.md)
 and
-[`bb_predict_population_change()`](https://poissonconsulting.github.io/bboutools/reference/bb_predict_population_change.md)
+[`bb_predict_population_change()`](https://github.com/LandSciTech/bboutools/reference/bb_predict_population_change.md)
 auto-filter to the intersection of populations and years when survival
 and recruitment fits cover different ranges. An informative message
 reports what was excluded.

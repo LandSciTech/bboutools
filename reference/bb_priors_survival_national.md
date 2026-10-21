@@ -3,7 +3,7 @@
 Returns intercept priors for the survival model informed by national
 demographic-disturbance relationships (Johnson et al. 2020). The
 returned priors override `b0_mu` and `b0_sd` in
-[`bb_priors_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_survival.md);
+[`bb_priors_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_survival.md);
 all other prior parameters retain their defaults.
 
 ## Usage
@@ -35,7 +35,7 @@ bb_priors_survival_national(anthro, fire_excl_anthro, annual = FALSE)
 
 A named vector with elements `b0_mu` and `b0_sd`, suitable for passing
 to the `priors` argument of
-[`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md).
+[`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md).
 
 ## Details
 
@@ -54,14 +54,14 @@ Canada. Journal of Applied Ecology, 57(7), pp.1314-1327.
 
 ## See also
 
-[`bb_priors_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_survival.md)
+[`bb_priors_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_survival.md)
 for default priors.
 
-[`bb_priors_recruitment_national()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment_national.md)
+[`bb_priors_recruitment_national()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment_national.md)
 for recruitment priors.
 
 Other priors:
-[`bb_priors_recruitment_national()`](https://poissonconsulting.github.io/bboutools/reference/bb_priors_recruitment_national.md)
+[`bb_priors_recruitment_national()`](https://github.com/LandSciTech/bboutools/reference/bb_priors_recruitment_national.md)
 
 ## Examples
 

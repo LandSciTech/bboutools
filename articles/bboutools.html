@@ -42,7 +42,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/poissonconsulting/bboutools/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="nav-link" href="https://github.com/LandSciTech/bboutools/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -59,7 +59,7 @@
       <h1>Getting Started with bboutools</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/bboutools/blob/main/vignettes/bboutools.Rmd" class="external-link"><code>vignettes/bboutools.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/LandSciTech/bboutools/blob/main/vignettes/bboutools.Rmd"><code>vignettes/bboutools.Rmd</code></a></small>
       <div class="d-none name"><code>bboutools.Rmd</code></div>
     </div>
 
@@ -80,8 +80,8 @@
 <!-- # See the License for the specific language governing permissions and -->
 <!-- # limitations under the License. -->
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/poissonconsulting/bboutools" class="external-link">bboutools</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/" class="external-link">bboudata</a></span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/LandSciTech/bboutools">bboutools</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/" class="external-link">bboudata</a></span><span class="op">)</span></span></code></pre></div>
 <p><code>bboutools</code> is an R package to estimate Boreal Caribou
 recruitment, survival and population growth. Functions are provided to
 fit Bayesian or Maximum Likelihood (ML) models and generate and plot
@@ -92,7 +92,7 @@ models. Model templates in Nimble use BUGS-like syntax.</p>
 <p>Several anonymized data sets are provided in a separate R package,
 <code>bboudata</code>.</p>
 <p>In order to use <code>bboutools</code> you need to install R (see
-below) or use the Shiny <a href="https://github.com/poissonconsulting/bboushiny" class="external-link">app</a>.</p>
+below) or use the Shiny <a href="https://github.com/LandSciTech/bboushiny" class="external-link">app</a>.</p>
 <div class="section level2">
 <h2 id="philosophy">Philosophy<a class="anchor" aria-label="anchor" href="#philosophy"></a>
 </h2>
@@ -113,11 +113,11 @@ installed from GitHub by executing the following code at the R
 console</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"poissonconsulting/bboutools"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"LandSciTech/bboutools"</span><span class="op">)</span></span></code></pre></div>
 <p>The <code>bboutools</code> package can then be loaded into the
 current session using</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/poissonconsulting/bboutools" class="external-link">bboutools</a></span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/LandSciTech/bboutools">bboutools</a></span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="getting-help">Getting Help<a class="anchor" aria-label="anchor" href="#getting-help"></a>
@@ -130,7 +130,7 @@ function.</p>
 <p>For more information on using R the reader is referred to <a href="https://r4ds.had.co.nz" class="external-link">R for Data Science</a> <span class="citation">(Wickham and Grolemund 2016)</span>.</p>
 <p>If you discover a bug in <code>bboutools</code> please file an issue
 with a <a href="https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html" class="external-link">reprex</a>
-(reproducible example) at <a href="https://github.com/poissonconsulting/bboutools/issues" class="external-link uri">https://github.com/poissonconsulting/bboutools/issues</a>.</p>
+(reproducible example) at <a href="https://github.com/LandSciTech/bboutools/issues" class="uri">https://github.com/LandSciTech/bboutools/issues</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="providing-data">Providing Data<a class="anchor" aria-label="anchor" href="#providing-data"></a>
@@ -143,8 +143,8 @@ anonymized datasets and can be checked to confirm it is in the correct
 format by using the <code>bboudata</code> functions:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Recruitment data</span></span>
-<span><span class="fu">bboudata</span><span class="fu">::</span><span class="fu"><a href="https://poissonconsulting.github.io/bboudata/reference/bbd_chk_data_recruitment.html" class="external-link">bbd_chk_data_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span><span class="op">)</span></span>
-<span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span></span>
+<span><span class="fu">bboudata</span><span class="fu">::</span><span class="fu"><a href="https://LandSciTech.github.io/bboudata/reference/bbd_chk_data_recruitment.html" class="external-link">bbd_chk_data_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span><span class="op">)</span></span>
+<span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 696 × 9</span></span></span>
 <span><span class="co">#&gt;    PopulationName  Year Month   Day  Cows Bulls UnknownAdults Yearlings Calves</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
@@ -161,8 +161,8 @@ format by using the <code>bboudata</code> functions:</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 686 more rows</span></span></span></code></pre></div>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Survival data</span></span>
-<span><span class="fu">bboudata</span><span class="fu">::</span><span class="fu"><a href="https://poissonconsulting.github.io/bboudata/reference/bbd_chk_data_survival.html" class="external-link">bbd_chk_data_survival</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span><span class="op">)</span></span>
-<span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span></span>
+<span><span class="fu">bboudata</span><span class="fu">::</span><span class="fu"><a href="https://LandSciTech.github.io/bboudata/reference/bbd_chk_data_survival.html" class="external-link">bbd_chk_data_survival</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span><span class="op">)</span></span>
+<span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 364 × 6</span></span></span>
 <span><span class="co">#&gt;    PopulationName  Year Month StartTotal MortalitiesCertain MortalitiesUncertain</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
@@ -183,7 +183,7 @@ changed.</p>
 (different <code>PopulationName</code> values). Survival data can also
 be provided as one row per population per year (aggregate annual data).
 Placeholder rows with <code>NA</code> measurement columns can be added
-for unobserved years with <code>allow_missing = TRUE</code>. See the <a href="https://poissonconsulting.github.io/bboutools/articles/extensions.html">extensions
+for unobserved years with <code>allow_missing = TRUE</code>. See the <a href="https://LandSciTech.github.io/bboutools/articles/extensions.html" class="external-link">extensions
 article</a> for details.</p>
 <p>The <code>.csv</code> file can then be read into R using the
 following</p>
@@ -234,7 +234,7 @@ effect with fewer than 5 years <span class="citation">(Kery and Schaub
 <p>The user can set <code>quiet = FALSE</code> argument to see messages
 and sampling progress.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">recruitment</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, year_trend <span class="op">=</span> <span class="cn">TRUE</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">recruitment</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, year_trend <span class="op">=</span> <span class="cn">TRUE</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="convergence">Convergence<a class="anchor" aria-label="anchor" href="#convergence"></a>
@@ -308,7 +308,7 @@ within the fitting functions.</p>
 <p>In general, weakly informative priors are used by default <span class="citation">(Gelman et al. 2017; McElreath 2016)</span>. The
 default prior distribution parameter values can be accessed from
 <code><a href="../reference/bb_priors_recruitment.html">bb_priors_recruitment()</a></code> and
-<code><a href="../reference/bb_priors_survival.html">bb_priors_survival()</a></code>. See the <a href="https://poissonconsulting.github.io/bboutools/articles/priors.html">priors
+<code><a href="../reference/bb_priors_survival.html">bb_priors_survival()</a></code>. See the <a href="https://LandSciTech.github.io/bboutools/articles/priors.html" class="external-link">priors
 article</a> for more information.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/bb_priors_recruitment.html">bb_priors_recruitment</a></span><span class="op">(</span><span class="op">)</span></span>
@@ -332,7 +332,7 @@ functions. The names must match one of the names in
 <code>b0</code> (e.g., <code>Normal(0, 5)</code>) can be supplied as
 follows.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">recruitment</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, priors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>adult_female_proportion_alpha <span class="op">=</span> <span class="fl">1</span>, adult_female_proportion_beta <span class="op">=</span> <span class="fl">1</span>, b0_mu <span class="op">=</span> <span class="fl">0</span>, b0_sd <span class="op">=</span> <span class="fl">5</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">recruitment</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, priors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>adult_female_proportion_alpha <span class="op">=</span> <span class="fl">1</span>, adult_female_proportion_beta <span class="op">=</span> <span class="fl">1</span>, b0_mu <span class="op">=</span> <span class="fl">0</span>, b0_sd <span class="op">=</span> <span class="fl">5</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p>The user can also specify priors informed by national
 demographic-disturbance relationships <span class="citation">(Johnson et
 al. 2020)</span> using <code><a href="../reference/bb_priors_survival_national.html">bb_priors_survival_national()</a></code> and
@@ -341,8 +341,8 @@ intercept priors based on the level of anthropogenic and fire
 disturbance.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">nat_priors</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_priors_recruitment_national.html">bb_priors_recruitment_national</a></span><span class="op">(</span>anthro <span class="op">=</span> <span class="fl">50</span>, fire_excl_anthro <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span>
-<span><span class="va">recruitment_nat</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, priors <span class="op">=</span> <span class="va">nat_priors</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<p>See the <a href="https://poissonconsulting.github.io/bboutools/articles/priors.html">priors
+<span><span class="va">recruitment_nat</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, priors <span class="op">=</span> <span class="va">nat_priors</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<p>See the <a href="https://LandSciTech.github.io/bboutools/articles/priors.html" class="external-link">priors
 article</a> for more information.</p>
 <p>If the user is interested in fitting models without any prior
 information, see <code><a href="../reference/bb_fit_recruitment_ml.html">bb_fit_recruitment_ml()</a></code> and
@@ -371,7 +371,7 @@ mortalities is the sum of the certain mortalities and uncertain
 mortalities (‘MortalitiesCertain’ and ‘MortalitiesUncertain’ columns);
 otherwise, only certain mortalities are used to fit the model.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">survival</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival.html">bb_fit_survival</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">survival</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival.html">bb_fit_survival</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://generics.r-lib.org/reference/tidy.html" class="external-link">tidy</a></span><span class="op">(</span><span class="va">survival</span>, include_random_effects <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 4 × 4</span></span></span>
@@ -387,7 +387,7 @@ otherwise, only certain mortalities are used to fit the model.</p>
 </h2>
 <p>A user can generate and plot predictions of recruitment, survival and
 population growth.</p>
-<p>Recruitment is the adjusted recruitment using methods from <span class="citation">(DeCesare et al. 2012)</span>. See the <a href="https://poissonconsulting.github.io/bboutools/articles/methods.html">analytical
+<p>Recruitment is the adjusted recruitment using methods from <span class="citation">(DeCesare et al. 2012)</span>. See the <a href="https://LandSciTech.github.io/bboutools/articles/methods.html" class="external-link">analytical
 methods article</a> for details.</p>
 <p>Predictions of calf-cow ratio can also be made using
 <code><a href="../reference/bb_predict_calf_cow_ratio.html">bb_predict_calf_cow_ratio()</a></code>.</p>
@@ -450,7 +450,7 @@ that survival and recruitment outputs share the same biological year
 (i.e., ‘caribou year’), which is set with the <code>year_start</code>
 argument in <code><a href="../reference/bb_fit_survival.html">bb_fit_survival()</a></code> and
 <code><a href="../reference/bb_fit_recruitment.html">bb_fit_recruitment()</a></code>. Details on how lambda is calculated
-can be found in the <a href="https://poissonconsulting.github.io/bboutools/articles/methods.html">analytical
+can be found in the <a href="https://LandSciTech.github.io/bboutools/articles/methods.html" class="external-link">analytical
 methods article</a>.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">predict_lambda</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_predict_growth.html">bb_predict_growth</a></span><span class="op">(</span>survival <span class="op">=</span> <span class="va">survival</span>, recruitment <span class="op">=</span> <span class="va">recruitment</span><span class="op">)</span></span>
@@ -477,7 +477,7 @@ populations simultaneously. The function <code><a href="../reference/bb_fit_surv
 auto-detects multiple populations from the <code>PopulationName</code>
 column.</p>
 <div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">survival_multi</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival.html">bb_fit_survival</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_multi.html" class="external-link">bbousurv_multi</a></span>, allow_missing <span class="op">=</span> <span class="cn">TRUE</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">survival_multi</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival.html">bb_fit_survival</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_multi.html" class="external-link">bbousurv_multi</a></span>, allow_missing <span class="op">=</span> <span class="cn">TRUE</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>Prediction plots are automatically faceted by population.</p>
 <div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">pred_multi</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_predict_survival.html">bb_predict_survival</a></span><span class="op">(</span><span class="va">survival_multi</span><span class="op">)</span></span>
@@ -485,7 +485,7 @@ column.</p>
 <p><img src="bboutools_files/figure-html/unnamed-chunk-26-1.png" class="r-plt" alt="" width="700"></p>
 <p>The default faceting can be overridden since all plot functions
 return <code>ggplot2</code> objects.</p>
-<p>See the <a href="https://poissonconsulting.github.io/bboutools/articles/extensions.html">extensions
+<p>See the <a href="https://LandSciTech.github.io/bboutools/articles/extensions.html" class="external-link">extensions
 article</a> for more information on multi-population analysis, aggregate
 annual survival data, predicting unobserved years and other
 extensions.</p>
@@ -503,7 +503,7 @@ Bayesian model fits, generic functions (e.g., <code><a href="https://generics.r-
 <code><a href="https://generics.r-lib.org/reference/glance.html" class="external-link">glance()</a></code> and <code><a href="https://generics.r-lib.org/reference/augment.html" class="external-link">augment()</a></code>) work on ML fit objects
 (class ‘bboufit_ml’).</p>
 <div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">recruitment_ml</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment_ml.html">bb_fit_recruitment_ml</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, year_trend <span class="op">=</span> <span class="cn">TRUE</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">recruitment_ml</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment_ml.html">bb_fit_recruitment_ml</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, year_trend <span class="op">=</span> <span class="cn">TRUE</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://generics.r-lib.org/reference/glance.html" class="external-link">glance</a></span><span class="op">(</span><span class="va">recruitment_ml</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 4</span></span></span>
@@ -511,7 +511,7 @@ Bayesian model fits, generic functions (e.g., <code><a href="https://generics.r-
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>    </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>    27     3  -<span style="color: #BB0000;">90.1</span> TRUE</span></span></code></pre></div>
 <div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">survival_ml</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival_ml.html">bb_fit_survival_ml</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">survival_ml</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_survival_ml.html">bb_fit_survival_ml</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbousurv_a.html" class="external-link">bbousurv_a</a></span>, year_start <span class="op">=</span> <span class="fl">4</span>, quiet <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>The ML estimates are comparable to estimates derived from the
 equivalent Bayesian models above. In general, ML models can be
 interpreted as Bayesian models with uninformative (e.g., uniform) priors
@@ -579,7 +579,7 @@ default, <code>bboutools</code> sets initial values based on the default
 priors used for parameters in the Bayesian models. The user can replace
 initial values for parameters using <code>inits</code>.</p>
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">inits_ml</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment_ml.html">bb_fit_recruitment_ml</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://poissonconsulting.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, inits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>b0 <span class="op">=</span> <span class="fl">1</span>, sAnnual <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">inits_ml</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/bb_fit_recruitment_ml.html">bb_fit_recruitment_ml</a></span><span class="op">(</span><span class="fu">bboudata</span><span class="fu">::</span><span class="va"><a href="https://LandSciTech.github.io/bboudata/reference/bbourecruit_a.html" class="external-link">bbourecruit_a</a></span>, inits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>b0 <span class="op">=</span> <span class="fl">1</span>, sAnnual <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="understanding-bboufit-objects">Understanding <code>bboufit</code> objects<a class="anchor" aria-label="anchor" href="#understanding-bboufit-objects"></a>
@@ -607,10 +607,9 @@ from<code><a href="https://rdrr.io/pkg/nimble/man/runMCMC.html" class="external-
 <p>These are the raw materials for any further exploration or analysis.
 For example, view trace and density plots with
 <code>plot(fit$samples)</code>.</p>
-<p>See <a href="https://github.com/poissonconsulting/mcmcr" class="external-link">mcmcr</a>
-and <a href="https://github.com/poissonconsulting/mcmcderive" class="external-link">mcmcderive</a>
-for working with <code>mcmcr</code> objects, or convert samples to an
-object of class <code>mcmc.list</code>, e,g, with
+<p>See <a href="https://github.com/LandSciTech/mcmcr" class="external-link">mcmcr</a> and <a href="https://github.com/LandSciTech/mcmcderive" class="external-link">mcmcderive</a> for
+working with <code>mcmcr</code> objects, or convert samples to an object
+of class <code>mcmc.list</code>, e,g, with
 <code><a href="https://rdrr.io/pkg/coda/man/mcmc.list.html" class="external-link">coda::as.mcmc.list</a></code> for working with the <a href="https://github.com/cran/coda" class="external-link">coda</a> R package.</p>
 <p>The <code><a href="../reference/bb_fit_survival_ml.html">bb_fit_survival_ml()</a></code> and
 <code><a href="../reference/bb_fit_recruitment_ml.html">bb_fit_recruitment_ml()</a></code> functions use a Maximum Likelihood
@@ -700,7 +699,7 @@ O’Reilly. <a href="https://r4ds.had.co.nz" class="external-link">https://r4ds.
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by <a href="https://www.poissonconsulting.ca/author/seb-dalgarno/" class="external-link">Seb Dalgarno</a>, <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, John Boulanger, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>.</p>
+  <p>Developed by <a href="https://www.poissonconsulting.ca/author/seb-dalgarno/" class="external-link">Seb Dalgarno</a>, <a href="https://www.poissonconsulting.ca/author/joe-thorley/" class="external-link">Joe Thorley</a>, John Boulanger, <a href="https://www.poissonconsulting.ca/author/ayla-pearson/" class="external-link">Ayla Pearson</a>, Sarah Endicott.</p>
 </div>
 
 <div class="pkgdown-footer-right">

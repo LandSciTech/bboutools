@@ -98,9 +98,9 @@ The start month of the Caribou year can be adjusted with `year_start`.
 ## See also
 
 Other model:
-[`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md),
-[`bb_fit_recruitment_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment_ml.md),
-[`bb_fit_survival_ml()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival_ml.md)
+[`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md),
+[`bb_fit_recruitment_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment_ml.md),
+[`bb_fit_survival_ml()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival_ml.md)
 
 ## Examples
 

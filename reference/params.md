@@ -99,12 +99,12 @@ Parameter Descriptions for bboutools Functions
 - survival:
 
   An object of class 'bboufit_survival' (output of
-  [`bb_fit_survival()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_survival.md)).
+  [`bb_fit_survival()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_survival.md)).
 
 - recruitment:
 
   An object of class 'bboufit_recruitment' (output of
-  [`bb_fit_recruitment()`](https://poissonconsulting.github.io/bboutools/reference/bb_fit_recruitment.md))
+  [`bb_fit_recruitment()`](https://github.com/LandSciTech/bboutools/reference/bb_fit_recruitment.md))
 
 - allow_missing:
 

@@ -26,11 +26,11 @@ A tibble of the augmented data.
 ## See also
 
 Other generics:
-[`augment.bboufit_ml()`](https://poissonconsulting.github.io/bboutools/reference/augment.bboufit_ml.md),
-[`glance.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/glance.bboufit.md),
-[`glance.bboufit_ml()`](https://poissonconsulting.github.io/bboutools/reference/glance.bboufit_ml.md),
-[`tidy.bboufit()`](https://poissonconsulting.github.io/bboutools/reference/tidy.bboufit.md),
-[`tidy.bboufit_ml()`](https://poissonconsulting.github.io/bboutools/reference/tidy.bboufit_ml.md)
+[`augment.bboufit_ml()`](https://github.com/LandSciTech/bboutools/reference/augment.bboufit_ml.md),
+[`glance.bboufit()`](https://github.com/LandSciTech/bboutools/reference/glance.bboufit.md),
+[`glance.bboufit_ml()`](https://github.com/LandSciTech/bboutools/reference/glance.bboufit_ml.md),
+[`tidy.bboufit()`](https://github.com/LandSciTech/bboutools/reference/tidy.bboufit.md),
+[`tidy.bboufit_ml()`](https://github.com/LandSciTech/bboutools/reference/tidy.bboufit_ml.md)
 
 ## Examples
 
