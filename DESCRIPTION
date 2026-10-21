@@ -59,8 +59,9 @@ VignetteBuilder:
 Remotes:
     LandSciTech/bbouNationalPriors,
     LandSciTech/bboudata,
-    LandSciTech/newdata,
-    LandSciTech/rescale
+    poissonconsulting/newdata,
+    poissonconsulting/rescale,
+    poissonconsulting/mcmcderive
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
