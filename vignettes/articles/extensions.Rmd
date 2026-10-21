@@ -113,7 +113,7 @@ pred_rec_multi <- bb_predict_recruitment(recruitment_multi)
 bb_plot_year_recruitment(pred_rec_multi)
 ```
 
-See the [analytical methods article](https://poissonconsulting.github.io/bboutools/articles/methods.html) for details on the multi-population model specification.
+See the [analytical methods article](https://LandSciTech.github.io/bboutools/articles/methods.html) for details on the multi-population model specification.
 
 Multi-population Maximum Likelihood models are not currently supported.
 
@@ -253,7 +253,7 @@ With `year_trend = FALSE` (default), all years are exchangeable and marginal pre
 The `year_trend = TRUE` option allows temporal patterns from the `bYear` prior to appear in predictions.
 
 Prior-only sampling is only supported for Bayesian models.
-See the [priors article](https://poissonconsulting.github.io/bboutools/articles/priors.html) for more information on national priors and data rescaling.
+See the [priors article](https://LandSciTech.github.io/bboutools/articles/priors.html) for more information on national priors and data rescaling.
 
 ## Growth Predictions with Mismatched Fits
 

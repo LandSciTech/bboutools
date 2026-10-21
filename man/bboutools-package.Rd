@@ -11,24 +11,26 @@ Estimates annual survival, recruitment and population growth for boreal caribou 
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/poissonconsulting/bboutools}
-  \item \url{https://poissonconsulting.github.io/bboutools/}
-  \item Report bugs at \url{https://github.com/poissonconsulting/bboutools/issues}
+  \item \url{https://github.com/LandSciTech/bboutools}
+  \item \url{https://LandSciTech.github.io/bboutools/}
+  \item Report bugs at \url{https://github.com/LandSciTech/bboutools/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Seb Dalgarno \email{seb@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
+\strong{Maintainer}: Sarah Endicott \email{Sarah.Endicott@ec.gc.ca} (Took over package maintenance October 2026)
 
 Authors:
 \itemize{
+  \item Seb Dalgarno \email{seb@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-3658-4517}{ORCID})
   \item Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID})
   \item John Boulanger (\href{https://orcid.org/0000-0001-8222-1445}{ORCID})
-  \item Ayla Pearson \email{ayla@poissonconsulting.ca}
+  \item Ayla Pearson \email{ayla@poissonconsulting.ca} (\href{https://orcid.org/0000-0001-7388-1222}{ORCID})
 }
 
 Other contributors:
 \itemize{
+  \item Josie Hughes \email{Josie.Hughes@ec.gc.ca} (Multi-population and other extensions based on LandSciTech/bboutoolsMultiPop) [contributor]
   \item Province of Alberta [copyright holder]
 }
 

@@ -43,7 +43,7 @@ Model templates in Nimble use BUGS-like syntax.
 
 Several anonymized data sets are provided in a separate R package, `bboudata`. 
 
-In order to use `bboutools` you need to install R (see below) or use the Shiny [app](https://github.com/poissonconsulting/bboushiny).
+In order to use `bboutools` you need to install R (see below) or use the Shiny [app](https://github.com/LandSciTech/bboushiny).
 
 ## Philosophy
 
@@ -57,7 +57,7 @@ In order to install R [@r] the appropriate binary for the users operating system
 Once R is installed, the `bboutools` package can be installed from GitHub by executing the following code at the R console
 ```{r, eval=FALSE}
 install.packages("remotes")
-remotes::install_github("poissonconsulting/bboutools")
+remotes::install_github("LandSciTech/bboutools")
 ```
 
 The `bboutools` package can then be loaded into the current session using
@@ -72,7 +72,7 @@ For example `?bb_fit_recruitment` brings up the R documentation for the `bboutoo
 
 For more information on using R the reader is referred to [R for Data Science](https://r4ds.had.co.nz) [@wickham_r_2016].
 
-If you discover a bug in `bboutools` please file an issue with a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html) (reproducible example) at <https://github.com/poissonconsulting/bboutools/issues>.
+If you discover a bug in `bboutools` please file an issue with a [reprex](https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html) (reproducible example) at <https://github.com/LandSciTech/bboutools/issues>.
 
 ## Providing Data
 
@@ -97,7 +97,7 @@ All columns should be included and column names should not be changed.
 Both survival and recruitment data can include multiple populations (different `PopulationName` values).
 Survival data can also be provided as one row per population per year (aggregate annual data).
 Placeholder rows with `NA` measurement columns can be added for unobserved years with `allow_missing = TRUE`.
-See the [extensions article](https://poissonconsulting.github.io/bboutools/articles/extensions.html) for details.
+See the [extensions article](https://LandSciTech.github.io/bboutools/articles/extensions.html) for details.
 
 The `.csv` file can then be read into R using the following
 ```{r, eval=FALSE}
@@ -183,7 +183,7 @@ Keep in mind that any reference to 'Year' or 'Annual' in these summary outputs r
 ### Priors
 In general, weakly informative priors are used by default [@gelman_prior_2017; @mcelreath_statistical_2016]. 
 The default prior distribution parameter values can be accessed from `bb_priors_recruitment()` and `bb_priors_survival()`. 
-See the [priors article](https://poissonconsulting.github.io/bboutools/articles/priors.html) for more information.
+See the [priors article](https://LandSciTech.github.io/bboutools/articles/priors.html) for more information.
 
 ```{r}
 bb_priors_recruitment()
@@ -204,7 +204,7 @@ nat_priors <- bb_priors_recruitment_national(anthro = 50, fire_excl_anthro = 5)
 recruitment_nat <- bb_fit_recruitment(bboudata::bbourecruit_a, priors = nat_priors, quiet = TRUE)
 ```
 
-See the [priors article](https://poissonconsulting.github.io/bboutools/articles/priors.html) for more information.
+See the [priors article](https://LandSciTech.github.io/bboutools/articles/priors.html) for more information.
 
 If the user is interested in fitting models without any prior information, see `bb_fit_recruitment_ml()` and `bb_fit_survival_ml()`, which use a Maximum Likelihood approach (see [Maximum Likelihood](#maximum-likelihood) below).
 
@@ -236,7 +236,7 @@ tidy(survival, include_random_effects = FALSE)
 A user can generate and plot predictions of recruitment, survival and population growth.
 
 Recruitment is the adjusted recruitment using  methods from [@decesare_estimating_2012]. 
-See the [analytical methods article](https://poissonconsulting.github.io/bboutools/articles/methods.html) for details.
+See the [analytical methods article](https://LandSciTech.github.io/bboutools/articles/methods.html) for details.
 
 Predictions of calf-cow ratio can also be made using `bb_predict_calf_cow_ratio()`. 
 
@@ -280,7 +280,7 @@ bb_plot_month_survival(predict_survival_month)
 A user can predict population growth (lambda) with `bb_predict_growth()`. 
 The survival and recruitment models fit in the previous steps are used as input.
 It is important to ensure that survival and recruitment outputs share the same biological year (i.e., 'caribou year'), which is set with the `year_start` argument in `bb_fit_survival()` and `bb_fit_recruitment()`.
-Details on how lambda is calculated can be found in the [analytical methods article](https://poissonconsulting.github.io/bboutools/articles/methods.html).
+Details on how lambda is calculated can be found in the [analytical methods article](https://LandSciTech.github.io/bboutools/articles/methods.html).
 
 ```{r}
 predict_lambda <- bb_predict_growth(survival = survival, recruitment = recruitment)
@@ -318,7 +318,7 @@ bb_plot_year_survival(pred_multi)
 
 The default faceting can be overridden since all plot functions return `ggplot2` objects.
 
-See the [extensions article](https://poissonconsulting.github.io/bboutools/articles/extensions.html) for more information on multi-population analysis, aggregate annual survival data, predicting unobserved years and other extensions.
+See the [extensions article](https://LandSciTech.github.io/bboutools/articles/extensions.html) for more information on multi-population analysis, aggregate annual survival data, predicting unobserved years and other extensions.
 
 ## Maximum Likelihood
 
@@ -398,7 +398,7 @@ Objects of class `bboufit` have four elements:
 These are the raw materials for any further exploration or analysis. 
 For example, view trace and density plots with `plot(fit$samples)`.
 
-See [mcmcr](https://github.com/poissonconsulting/mcmcr) and [mcmcderive](https://github.com/poissonconsulting/mcmcderive) for working with `mcmcr` objects, or convert samples to an object of class `mcmc.list`, e,g, with `coda::as.mcmc.list` for working with the [coda](https://github.com/cran/coda) R package. 
+See [mcmcr](https://github.com/LandSciTech/mcmcr) and [mcmcderive](https://github.com/LandSciTech/mcmcderive) for working with `mcmcr` objects, or convert samples to an object of class `mcmc.list`, e,g, with `coda::as.mcmc.list` for working with the [coda](https://github.com/cran/coda) R package. 
 
 The `bb_fit_survival_ml()` and `bb_fit_recruitment_ml()` functions use a Maximum Likelihood approach and return objects that inherit from class `bboufit_ml`.
 

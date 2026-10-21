@@ -163,7 +163,7 @@ This is a more straightforward task with Bayesian models.
 
 `bboutools` provides the option to estimate parameter values using a Maximum Likelihood or a fully Bayesian approach. 
 Random effects are used where appropriate by default. 
-The Bayesian approach also uses biologically reasonable, weakly informative priors by default (see the [priors article](https://poissonconsulting.github.io/bboutools/articles/priors.html) for details).
+The Bayesian approach also uses biologically reasonable, weakly informative priors by default (see the [priors article](https://LandSciTech.github.io/bboutools/articles/priors.html) for details).
 `bboutools` provides relatively simple general models that can be used to compare survival, recruitment and population growth estimates across jurisdictions.
 
 By default, the `bboutools` Bayesian method saves 1,000 MCMC samples from each of three chains (after discarding the first halves). 
