@@ -36,7 +36,7 @@ model_data_recruitment <- function(
     if (any(placeholder)) {
       unobserved_years <- caribou_year(
         data$Year[placeholder],
-        year_start,
+        ifelse("Month" %in% colnames(data), year_start - 1, year_start),
         year_start = year_start
       )
       if (!quiet) {
