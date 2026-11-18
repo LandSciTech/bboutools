@@ -129,7 +129,8 @@ test_that("bb_fit_recruitment works with prior-only data", {
   pred <- bb_predict_recruitment(fit)
   expect_s3_class(pred, "tbl_df")
   expect_gt(nrow(pred), 0)
-  expect_true(all(pred$CaribouYear %in% 2020:2022))
+  # CaribouYear is one less than year because recruitment survey happens spring after
+  expect_true(all(pred$CaribouYear %in% 2019:2021))
   expect_snapshot_data(pred, "recruitment_pred_prior_only")
 })
 
