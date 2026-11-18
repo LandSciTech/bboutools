@@ -34,9 +34,10 @@ model_data_recruitment <- function(
       length(measurement_cols)
     population_names <- unique(data$PopulationName)
     if (any(placeholder)) {
+      survey_month <- if (year_start == 1L) 12L else year_start - 1L
       unobserved_years <- caribou_year(
         data$Year[placeholder],
-        ifelse("Month" %in% colnames(data), year_start - 1, year_start),
+        survey_month,
         year_start = year_start
       )
       if (!quiet) {
